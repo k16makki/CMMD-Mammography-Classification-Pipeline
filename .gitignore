@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data / ML
+data/
+datasets/
+models/
+*.h5
+*.keras
+*.ckpt
+*.pb
+
+# Tools lourds
+tools/
+*.zip
+*.tar
+*.gz
+*.AppImage
+*.deb
+
+# Logs
+logs/
+*.log 
+
+
+# IDE
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Outputs / results
+results/

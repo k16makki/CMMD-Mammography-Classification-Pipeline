@@ -1,0 +1,18 @@
+# docker-compose.yml
+version: "3.8"
+
+services:
+  cmmd-download:
+    build: .                  # builds from your existing Dockerfile
+    volumes:
+      - ./data:/data         # mount ./data on host as /data in container
+
+  cmmd-train:
+    # build this service from the training Dockerfile
+    build:
+      context: .
+      dockerfile: Dockerfile.train
+    volumes:
+      - ./data:/data         # mount the same data volume
+    # optionally set command; defaults to ENTRYPOINT in Dockerfile.train
+    # command: ["/app/src/train_mammo.py"]

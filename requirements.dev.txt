@@ -1,0 +1,5 @@
+tensorflow>=2.12
+# Optional: for metrics and evaluation
+scikit-learn>=1.0
+numpy>=1.21
+pandas>=1.5
